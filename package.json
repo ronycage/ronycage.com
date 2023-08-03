@@ -1,0 +1,45 @@
+{
+  "name": "ronycage.com",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "20.4.5",
+    "@types/react": "18.2.17",
+    "@types/react-dom": "18.2.7",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
+    "github-markdown-css": "^5.2.0",
+    "gray-matter": "^4.0.3",
+    "markdown-to-jsx": "^7.2.1",
+    "next": "13.4.12",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-markdown": "^8.0.7",
+    "react-remark": "^2.1.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "rehype-katex": "^6.0.3",
+    "rehype-raw": "^6.1.1",
+    "rehype-sanitize": "^5.0.1",
+    "rehype-stringify": "^9.0.3",
+    "remark-directive": "^2.0.1",
+    "remark-gfm": "^3.0.1",
+    "remark-iframes": "^4.0.5",
+    "remark-math": "^5.1.1",
+    "remark-oembed": "^1.2.2",
+    "remark-rehype": "^10.1.0",
+    "remark-toc": "^8.0.1",
+    "sass": "^1.64.2",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/react-syntax-highlighter": "^15.5.7",
+    "remark-youtube-placeholder": "^1.0.3"
+  }
+}

@@ -1,0 +1,53 @@
+@use "../../../theme.config.scss" as *;
+
+.Card {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+
+  gap: 15px;
+  padding: 20px 20px;
+  width: 700px;
+
+  background-color: $background;
+  border-radius: 10px;
+  border: 1px solid #424242;
+
+  .title {
+    font-size: large;
+    line-height: 1.3;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  .date {
+    font-size: small;
+    font-weight: lighter;
+    line-height: 1.5;
+  }
+
+  .readBtn {
+    width: 100px;
+    height: 36px;
+    padding: 0 13px;
+    display: inline-block;
+
+    background-color: $secondary;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.8125rem;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primary;
+      font-weight: bold;
+      color: #000;
+    }
+  }
+}

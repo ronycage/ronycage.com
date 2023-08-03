@@ -1,0 +1,99 @@
+@use "../../../theme.config.scss" as *;
+
+@media screen and (max-width: 1036px) {
+}
+
+.Sidebar {
+  padding: 3rem;
+
+  background-color: $background;
+  width: $sidebarWidth;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+  counter-reset: ctr;
+
+  .title {
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  .option {
+    position: relative;
+    padding: 0.5rem 0;
+    padding-left: 2.5rem;
+
+    display: block;
+    line-height: 2rem;
+
+    &:after {
+      content: counter(ctr, decimal-leading-zero) ".";
+      counter-increment: ctr;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      color: $accent;
+
+      &:after {
+        color: $accent;
+      }
+    }
+
+    &.active {
+      color: $primary;
+      font-weight: bold;
+
+      &:after {
+        color: $primary;
+        font-weight: bold;
+      }
+
+      &:hover {
+        color: $accent;
+
+        &:after {
+          color: $accent;
+        }
+      }
+    }
+  }
+
+  .footer {
+    .socials {
+      display: inline-flex;
+      gap: 15px;
+      margin-bottom: 1em;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 1.5rem;
+        width: 1.8rem;
+        height: 1.8rem;
+
+        background-color: $text-invert;
+        color: $text;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: $accent;
+          color: $text-invert;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,179 @@
+@use "../../../theme.config.scss" as *;
+
+.Card {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+
+  gap: 15px;
+  padding: 20px 20px;
+  width: 700px;
+
+  background-color: $background;
+  border-radius: 10px;
+  border: $border;
+
+  .title {
+    font-size: large;
+    line-height: 1.3;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    .date {
+      font-size: small;
+      font-weight: lighter;
+      line-height: 1.5;
+    }
+  }
+
+  .btn {
+    width: 100px;
+    height: 36px;
+    padding: 0 13px;
+    display: inline-block;
+
+    background-color: $secondary;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.8125rem;
+    text-decoration: none;
+    color: $text;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primary;
+      font-weight: bold;
+      color: $text-invert;
+    }
+  }
+
+  .markdown {
+    width: 100%;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    ul {
+      margin: 0 30px;
+      li {
+        list-style: circle;
+
+        line-height: 2rem;
+        font-weight: bold;
+        padding-left: 5px;
+
+        p a,
+        a {
+          color: $text;
+
+          &:hover {
+            color: $accent;
+          }
+        }
+      }
+    }
+
+    details {
+      border-radius: 0.3em;
+      padding: 5px 15px;
+      margin: 20px 0;
+      line-height: 2.5rem;
+      background: $gradient;
+
+      color: $text;
+      summary {
+        color: $text;
+      }
+    }
+
+    p {
+      a {
+        color: $accent;
+
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+
+    table {
+      border-radius: 0.3em;
+      border: $border;
+      background: $gradient;
+
+      padding: 10px;
+      margin: 20px auto;
+      width: 100%;
+      text-align: left;
+
+      // th {
+      // background-color: $background;
+      // }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: $border;
+      }
+
+      tr:nth-child(even) {
+        background-color: $background;
+      }
+    }
+
+    blockquote {
+      padding: 10px;
+      border: $border;
+      border-radius: 0.3em;
+      margin: 10px 0;
+
+      background: $gradient;
+      color: $text;
+    }
+
+    hr {
+      margin: 20px 0;
+    }
+
+    iframe {
+      width: 100%;
+    }
+
+    .math {
+      padding: 10px;
+
+      border: $border;
+      border-radius: 0.3em;
+      margin: 10px 0;
+
+      background: $gradient;
+
+      font-size: large;
+      width: 100%;
+      display: flex;
+      flex-flow: row;
+
+      /* DON'T REMOVE UNTIL SQURARE ROOT IS NOT FIXED */
+      overflow: hidden;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+@use "../../theme.config.scss" as *;
+
+.mobile {
+  .content {
+    width: 100vw !important;
+    max-width: 100%;
+
+    // what the fuck
+    .children {
+      max-width: 100% !important;
+
+      .Card {
+        max-width: 100% !important;
+      }
+
+      .CardPreview {
+        max-width: 100% !important;
+      }
+    }
+  }
+  .Sidebar {
+    display: none !important;
+    z-index: 1;
+    &.active {
+      display: flex !important;
+    }
+  }
+  .closeBtn {
+    display: block !important;
+  }
+}
+
+.closeBtn {
+  z-index: 2;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  margin-top: 2.4rem;
+  margin-right: 1rem;
+
+  width: 40px;
+  height: 40px;
+  background-color: #1e1f1f;
+  border-radius: 3px;
+  border: 1px solid #424242;
+  font-size: 0.8125rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease-in-out;
+
+  cursor: pointer;
+
+  &:active {
+    background-color: $accent;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $secondary;
+  color: $text;
+}
+
+a {
+  text-decoration: none;
+  color: $text;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+ul,
+li {
+  list-style: none;
+}

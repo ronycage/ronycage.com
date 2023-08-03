@@ -1,0 +1,16 @@
+@use "../../../theme.config.scss" as *;
+
+.Page {
+  .content {
+    // TODO: make this not rely on sidebar width
+    width: calc(100% - $sidebarWidth);
+    // TODO: same weird thing
+    padding: 2.7rem 0;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+}

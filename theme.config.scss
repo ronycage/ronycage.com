@@ -1,0 +1,29 @@
+$sidebarWidth: 300px;
+
+/* dark */
+$text: #ffffff;
+$text-invert: #000;
+$background: #101010;
+$primary: #91fdfd;
+$secondary: #1e1f1f;
+$accent: #0eecd6;
+$gradient: linear-gradient(
+  180deg,
+  rgba(30, 31, 31, 1) 0%,
+  rgba(16, 16, 16, 1) 100%
+);
+$border: 1px solid #424242;
+
+/* white */
+// $text: #000000;
+// $text-invert: white;
+// $background: #fafafa;
+// $primary: #afb7de;
+// $secondary: #e0e1e6;
+// $accent: #3d4b94;
+// $gradient: linear-gradient(
+//   90deg,
+//   rgba(238, 174, 202, 0.3617822128851541) 0%,
+//   rgba(148, 187, 233, 0.3393732492997199) 100%
+// );
+// $border: 1px solid #b1b1b1;

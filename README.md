@@ -6,6 +6,7 @@ You can see live demo on ronycage.com
 
 - Finish blog, web projects, music projects, contact me pages
 - Articles sort
+- Clean up scss mess
 - Toggle dark mode
 
 # License
